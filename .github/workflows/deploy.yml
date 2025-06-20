@@ -23,7 +23,7 @@ jobs:
         run: npm install # Install project dependencies
 
       - name: Build Vite App 🏗️
-        run: npm run build # Run the Vite build command
+        run: npm exec vite build # Run the Vite build command
 
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v4 # Action to deploy to GitHub Pages
